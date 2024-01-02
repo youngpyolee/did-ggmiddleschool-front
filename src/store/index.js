@@ -1,12 +1,14 @@
-import { createStore } from 'vuex'
+import { createStore } from 'vuex';
+import configStore from './configStore';
+import weatherDustStore from './weatherDustStore';
+import dataStore from './dataStore';
+import modalPopStore from './modalPopStore';
 
 export default createStore({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
   modules: {
+    configStore,
+    weatherDustStore,
+    dataStore,
+    modalPopStore,
   }
 })

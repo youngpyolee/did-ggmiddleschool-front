@@ -1,0 +1,91 @@
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 300;
+    src:
+        local(NotoSansKR-Light),
+        url(../font/NotoSansKR-Light.woff2) format('woff2'), 
+        url(../font/NotoSansKR-Light.woff) format('woff'), 
+        url(../font/NotoSansKR-Light.otf) format('opentype');
+}
+
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: normal;
+    src:
+        local(NotoSansKR-Regular),
+        url(../font/NotoSansKR-Regular.woff2) format('woff2'), 
+        url(../font/NotoSansKR-Regular.woff) format('woff'), 
+        url(../font/NotoSansKR-Regular.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 500;
+    src:
+        local(NotoSansKR-Medium),
+        url(../font/NotoSansKR-Medium.woff2) format('woff2'), 
+        url(../font/NotoSansKR-Medium.woff) format('woff'), 
+        url(../font/NotoSansKR-Medium.otf) format('opentype');
+}
+
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: bold;
+    src:
+        local(NotoSansKR-Bold), 
+        url(../font/NotoSansKR-Bold.woff2) format('woff2'), 
+        url(../font/NotoSansKR-Bold.woff) format('woff'), 
+        url(../font/NotoSansKR-Bold.otf) format('opentype');
+}
+
+
+
+/** 나눔스퀘어라운드 **/
+@font-face {
+	font-family: 'NanumSquareRound';
+	font-style: normal;
+	font-weight: 300;
+    src:
+        local(NanumSquareRoundL),
+        url(../font/NanumSquareRoundL.woff) format('woff'), 
+        url(../font/NanumSquareRoundL.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'NanumSquareRound';
+	font-style: normal;
+	font-weight: 400;
+    src:
+        local(NanumSquareRoundR),
+        url(../font/NanumSquareRoundR.woff) format('woff'), 
+        url(../font/NanumSquareRoundR.otf) format('opentype');
+}
+
+
+@font-face {
+	font-family: 'NanumSquareRound';
+	font-style: normal;
+	font-weight: 500;
+    src:
+        local(NanumSquareRoundB), 
+        url(../font/NanumSquareRoundB.woff) format('woff'), 
+        url(../font/NanumSquareRoundB.otf) format('opentype');
+}
+
+
+@font-face {
+	font-family: 'NanumSquareRound';
+	font-style: normal;
+	font-weight: 700;
+    src:
+        local(NanumSquareRoundEB), 
+        url(../font/NanumSquareRoundEB.woff) format('woff'), 
+        url(../font/NanumSquareRoundEB.otf) format('opentype');
+}
+

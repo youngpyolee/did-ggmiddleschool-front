@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<title>소사중학교</title>
+	<logoUrl>/data/images/logo/gyeonggi.png</logoUrl>
+	<!-- 날씨측정소 x -->
+	<dataGoWetherNx>57</dataGoWetherNx>
+	<!-- 날씨측정소 -->
+	<dataGoWetherNy>125</dataGoWetherNy>
+	<!-- 미세먼지 측정소 -->
+	<dataGoDustStationName>소사본동</dataGoDustStationName>
+	<!-- wait time 10시간 -->
+     <dataWaiTime>43200000</dataWaiTime>
+	<!--<dataWaiTime>10000</dataWaiTime>-->
+	<!-- 미세먼지정보 -->
+	<dustScheduleUrl>/data/data_store/dust_schedule.json</dustScheduleUrl>
+	<!-- 미세먼지정보 -->
+	<weatherScheduleUrl>/data/data_store/weather_schedule.json</weatherScheduleUrl>
+	<fileSaveDir>/data/data_store</fileSaveDir>
+	<!-- 봉사활동 지역코드 부천시 -->
+	<volunteerAreaCd>028015</volunteerAreaCd>
+	<!-- 공연전시 지역코드 미정 -->
+	<pblprfrCd>031</pblprfrCd>
+	<!-- 부천시 -->
+	<workAreaCd>41190</workAreaCd>
+	<!-- 부천시 소사본동 -->
+	<svgMap>gg.svg</svgMap>
+	<!-- 시스템 그룹 -->
+	<sysGroup>ggms</sysGroup>
+	<main>
+		<component>Main</component>
+		<statsCd>001</statsCd>
+	</main>
+	<mainYn>N</mainYn>
+	<highschoolYn>Y</highschoolYn>
+	<itemList>
+		<item>
+			<itemIndex>0</itemIndex>
+			<title>고교정보</title>
+			<mainYn>N</mainYn>
+			<gnbYn>Y</gnbYn>
+			<comp>SchoolAreaInfo</comp>
+			<name>SchoolAreaInfo</name>
+			<statsCd>001</statsCd>
+			<gnbOnUrl>/data/images/gnb-3.png</gnbOnUrl>
+			<gnbOffUrl>/data/images/gnb-3.png</gnbOffUrl>
+			<workAreaCntListUrl>/data/images/gnb-3.png</workAreaCntListUrl>
+			<highSchoolHowSection>A</highSchoolHowSection>
+			<subItemList>
+				<subItem>
+					<subIndex>0</subIndex>
+					<subTitle>지도로 찾기</subTitle>
+					<statsCd>006</statsCd>
+					<subComp>SchoolAreaInfoMap</subComp>
+					<schoolTypeList>
+						<schoolType>
+							<schoolTypeCd>A</schoolTypeCd>
+							<schoolTypeAreaCd>4119011000</schoolTypeAreaCd>
+							<schoolTypeNm>일반고</schoolTypeNm>
+							<schoolTypeSvg>/data/images/svg/경기-부천.svg</schoolTypeSvg>
+							<schoolTypeClass>부천</schoolTypeClass>
+							<schoolTypeMapCntUrl>/data/data_store/config_school_part_41190_section_cnt.json</schoolTypeMapCntUrl>
+						</schoolType>
+
+						<schoolType>
+							<schoolTypeCd>C</schoolTypeCd>
+							<schoolTypeAreaCd>41190</schoolTypeAreaCd>
+							<schoolTypeNm>특성화고</schoolTypeNm>
+							<schoolTypeSvg>/data/images/svg/경기도.svg</schoolTypeSvg>
+							<schoolTypeClass>경기</schoolTypeClass>
+							<schoolTypeMapCntUrl>/data/data_store/config_school_all_section_cnt.json</schoolTypeMapCntUrl>
+						</schoolType>
+						<schoolType>
+							<schoolTypeCd>D</schoolTypeCd>
+							<schoolTypeAreaCd>41190</schoolTypeAreaCd>
+							<schoolTypeNm>특수목적고</schoolTypeNm>
+							<schoolTypeSvg>/data/images/svg/경기도.svg</schoolTypeSvg>
+							<schoolTypeClass>경기</schoolTypeClass>
+							<schoolTypeMapCntUrl>/data/data_store/config_school_all_section_cnt.json</schoolTypeMapCntUrl>
+						</schoolType>
+						<schoolType>
+							<schoolTypeCd>B</schoolTypeCd>
+							<schoolTypeAreaCd>41190</schoolTypeAreaCd>
+							<schoolTypeNm>자율고</schoolTypeNm>
+							<schoolTypeSvg>/data/images/svg/경기도.svg</schoolTypeSvg>
+							<schoolTypeClass>경기</schoolTypeClass>
+							<schoolTypeMapCntUrl>/data/data_store/config_school_all_section_cnt.json</schoolTypeMapCntUrl>
+						</schoolType>
+						<schoolType>
+							<schoolTypeCd>E</schoolTypeCd>
+							<schoolTypeAreaCd>41190</schoolTypeAreaCd>
+							<schoolTypeNm>종합고</schoolTypeNm>
+							<schoolTypeSvg>/data/images/svg/경기도.svg</schoolTypeSvg>
+							<schoolTypeClass>경기</schoolTypeClass>
+							<schoolTypeMapCntUrl>/data/data_store/config_school_all_section_cnt.json</schoolTypeMapCntUrl>
+						</schoolType>
+					</schoolTypeList>
+				</subItem>
+				<subItem>
+					<subIndex>1</subIndex>
+					<subTitle>학과로 찾기</subTitle>
+					<statsCd>007</statsCd>
+					<subComp>SchoolAreaInfoSubject</subComp>
+				</subItem>
+				<subItem>
+					<subIndex>2</subIndex>
+					<subTitle>검색순위</subTitle>
+					<statsCd>008</statsCd>
+					<subComp>SchoolAreaInfoRank</subComp>
+					<displayList>A,B,C,D,E</displayList>
+				</subItem>
+			</subItemList>
+		</item>
+		<item>
+			<itemIndex>1</itemIndex>
+			<title>직업진로</title>
+			<mainYn>N</mainYn>
+			<gnbYn>Y</gnbYn>
+			<comp>JobCourse</comp>
+			<name>JobCourse</name>
+			<statsCd>002</statsCd>
+			<gnbOnUrl>/data/images/gnb-1.png</gnbOnUrl>
+			<gnbOffUrl>/data/images/gnb-1.png</gnbOffUrl>
+			<subItemList>
+				<subItem>
+					<subIndex>0</subIndex>
+					<subTitle>이슈매거진</subTitle>
+					<statsCd>009</statsCd>
+					<subComp>MagazineDetail</subComp>
+					<dataUrl>/data/data_store/config_magazine.json</dataUrl>
+				</subItem>
+				<subItem>
+					<subIndex>1</subIndex>
+					<subTitle>직무인터뷰</subTitle>
+					<statsCd>010</statsCd>
+					<subComp>DutyInterviewList</subComp>
+					<dataUrl>/data/data_store/interview_duty_first.json</dataUrl>
+					<dutyInterviewList>
+						<dutyInterviewItem>
+							<dutyInterviewIndex>0</dutyInterviewIndex>
+							<dutyInterviewTitle>경영/사무</dutyInterviewTitle>
+							<dataUrl>/data/data_store/interview_duty_01.json</dataUrl>
+							<dataCd>01</dataCd>
+							<statsCd>310</statsCd>
+						</dutyInterviewItem>
+						<dutyInterviewItem>
+							<dutyInterviewIndex>1</dutyInterviewIndex>
+							<dutyInterviewTitle>기획/마케팅/홍보</dutyInterviewTitle>
+							<dataUrl>/data/data_store/interview_duty_02.json</dataUrl>
+							<dataCd>02</dataCd>
+							<statsCd>000</statsCd>
+						</dutyInterviewItem>
+						<dutyInterviewItem>
+							<dutyInterviewIndex>2</dutyInterviewIndex>
+							<dutyInterviewTitle>영업/고객상담</dutyInterviewTitle>
+							<dataUrl>/data/data_store/interview_duty_03.json</dataUrl>
+							<dataCd>03</dataCd>
+							<statsCd>000</statsCd>
+						</dutyInterviewItem>
+						<dutyInterviewItem>
+							<dutyInterviewIndex>3</dutyInterviewIndex>
+							<dutyInterviewTitle>IT/SW/인터넷</dutyInterviewTitle>
+							<dataUrl>/data/data_store/interview_duty_04.json</dataUrl>
+							<dataCd>04</dataCd>
+							<statsCd>000</statsCd>
+						</dutyInterviewItem>
+						<dutyInterviewItem>
+							<dutyInterviewIndex>4</dutyInterviewIndex>
+							<dutyInterviewTitle>연구개발/설계</dutyInterviewTitle>
+							<dataUrl>/data/data_store/interview_duty_05.json</dataUrl>
+							<dataCd>05</dataCd>
+							<statsCd>000</statsCd>
+						</dutyInterviewItem>
+						<dutyInterviewItem>
+							<dutyInterviewIndex>5</dutyInterviewIndex>
+							<dutyInterviewTitle>생산/제조</dutyInterviewTitle>
+							<dataUrl>/data/data_store/interview_duty_06.json</dataUrl>
+							<dataCd>06</dataCd>
+							<statsCd>000</statsCd>
+						</dutyInterviewItem>
+						<dutyInterviewItem>
+							<dutyInterviewIndex>6</dutyInterviewIndex>
+							<dutyInterviewTitle>디자인</dutyInterviewTitle>
+							<dataUrl>/data/data_store/interview_duty_07.json</dataUrl>
+							<dataCd>07</dataCd>
+							<statsCd>000</statsCd>
+						</dutyInterviewItem>
+						<dutyInterviewItem>
+							<dutyInterviewIndex>7</dutyInterviewIndex>
+							<dutyInterviewTitle>전문/특수직</dutyInterviewTitle>
+							<dataUrl>/data/data_store/interview_duty_08.json</dataUrl>
+							<dataCd>08</dataCd>
+							<statsCd>000</statsCd>
+						</dutyInterviewItem>
+						<dutyInterviewItem>
+							<dutyInterviewIndex>8</dutyInterviewIndex>
+							<dutyInterviewTitle>미디어</dutyInterviewTitle>
+							<dataUrl>/data/data_store/interview_duty_09.json</dataUrl>
+							<dataCd>09</dataCd>
+							<statsCd>000</statsCd>
+						</dutyInterviewItem>
+						<dutyInterviewItem>
+							<dutyInterviewIndex>9</dutyInterviewIndex>
+							<dutyInterviewTitle>무역/유통</dutyInterviewTitle>
+							<dataUrl>/data/data_store/interview_duty_10.json</dataUrl>
+							<dataCd>10</dataCd>
+							<statsCd>000</statsCd>
+						</dutyInterviewItem>
+						<dutyInterviewItem>
+							<dutyInterviewIndex>10</dutyInterviewIndex>
+							<dutyInterviewTitle>기타</dutyInterviewTitle>
+							<dataUrl>/data/data_store/interview_duty_11.json</dataUrl>
+							<dataCd>10</dataCd>
+							<statsCd>000</statsCd>
+						</dutyInterviewItem>
+					</dutyInterviewList>
+				</subItem>
+				<subItem>
+					<subIndex>2</subIndex>
+					<subTitle>대한민국대표직업</subTitle>
+					<statsCd>011</statsCd>
+					<subComp>KoreaPresentOccp</subComp>
+				</subItem>
+				<subItem>
+					<subIndex>3</subIndex>
+					<subTitle>테마별직업</subTitle>
+					<statsCd>012</statsCd>
+					<subComp>ThemePerOccp</subComp>
+					<occpItemDataList>
+						<occpItemData><itemCd>D001</itemCd><itemTitle>여행</itemTitle>     <itemImg><![CDATA[/data/images/icon-theme-01.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>D002</itemCd><itemTitle>음식</itemTitle>     <itemImg><![CDATA[/data/images/icon-theme-02.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>D003</itemCd><itemTitle>호텔</itemTitle>     <itemImg><![CDATA[/data/images/icon-theme-03.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>D004</itemCd><itemTitle>수송</itemTitle>     <itemImg><![CDATA[/data/images/icon-theme-04.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>D005</itemCd><itemTitle>관광레저</itemTitle>  <itemImg><![CDATA[/data/images/icon-theme-05.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>D006</itemCd><itemTitle>게임</itemTitle>        <itemImg><![CDATA[/data/images/icon-theme-06.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>D007</itemCd><itemTitle>애니메이션</itemTitle>   <itemImg><![CDATA[/data/images/icon-theme-07.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>D008</itemCd><itemTitle>순수예술</itemTitle>     <itemImg><![CDATA[/data/images/icon-theme-08.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>D009</itemCd><itemTitle>영화</itemTitle>        <itemImg><![CDATA[/data/images/icon-theme-09.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>D010</itemCd><itemTitle>음반</itemTitle>        <itemImg><![CDATA[/data/images/icon-theme-10.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>D011</itemCd><itemTitle>금융</itemTitle>        <itemImg><![CDATA[/data/images/icon-theme-11.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>D012</itemCd><itemTitle>스포츠</itemTitle>       <itemImg><![CDATA[/data/images/icon-theme-12.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>D013</itemCd><itemTitle>의료</itemTitle>        <itemImg><![CDATA[/data/images/icon-theme-13.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>D014</itemCd><itemTitle>과학수사와 법</itemTitle> <itemImg><![CDATA[/data/images/icon-theme-14.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>D015</itemCd><itemTitle>문화/예술</itemTitle>    <itemImg><![CDATA[/data/images/icon-theme-15.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>D016</itemCd><itemTitle>방송/언론</itemTitle>    <itemImg><![CDATA[/data/images/icon-theme-16.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>D017</itemCd><itemTitle>광고/마케팅</itemTitle>   <itemImg><![CDATA[/data/images/icon-theme-17.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>D018</itemCd><itemTitle>디자인</itemTitle>       <itemImg><![CDATA[/data/images/icon-theme-18.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>D019</itemCd><itemTitle>정보통신</itemTitle>     <itemImg><![CDATA[/data/images/icon-theme-19.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>D020</itemCd><itemTitle>건설/교통</itemTitle>    <itemImg><![CDATA[/data/images/icon-theme-20.png]]></itemImg></occpItemData>
+					</occpItemDataList>
+				</subItem>
+				<subItem>
+					<subIndex>4</subIndex>
+					<subTitle>이색직업</subTitle>
+					<statsCd>013</statsCd>
+					<subComp>UnUseOccp</subComp>
+					<occpItemDataList>
+						<occpItemData><itemCd>B001</itemCd><itemTitle><![CDATA[경영/기획/금융]]></itemTitle>     <itemImg><![CDATA[/data/images/icon-exotic-01.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>B002</itemCd><itemTitle><![CDATA[공공/안전]]></itemTitle>     <itemImg><![CDATA[/data/images/icon-exotic-02.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>B003</itemCd><itemTitle><![CDATA[보건/의료]]></itemTitle>     <itemImg><![CDATA[/data/images/icon-exotic-03.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>B004</itemCd><itemTitle><![CDATA[사회복지/교육]]></itemTitle>     <itemImg><![CDATA[/data/images/icon-exotic-04.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>B005</itemCd><itemTitle><![CDATA[과학/공학/IT]]></itemTitle>  <itemImg><![CDATA[/data/images/icon-exotic-05.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>B006</itemCd><itemTitle><![CDATA[문화/예술]]></itemTitle>        <itemImg><![CDATA[/data/images/icon-exotic-06.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>B007</itemCd><itemTitle><![CDATA[디자인/방송]]></itemTitle>   <itemImg><![CDATA[/data/images/icon-exotic-07.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>B008</itemCd><itemTitle><![CDATA[미용/여행/음식]]></itemTitle>     <itemImg><![CDATA[/data/images/icon-exotic-08.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>B009</itemCd><itemTitle><![CDATA[스포츠/동물]]></itemTitle>        <itemImg><![CDATA[/data/images/icon-exotic-09.png]]></itemImg></occpItemData>
+					</occpItemDataList>
+				</subItem>
+				<subItem>
+					<subIndex>5</subIndex>
+					<subTitle>신직업미래직업</subTitle>
+					<statsCd>014</statsCd>
+					<subComp>NewOccp</subComp>
+					<occpItemDataList>
+						<occpItemData><itemCd>1</itemCd><itemTitle><![CDATA[경영/기획/공공]]></itemTitle>       <itemImg><![CDATA[/data/images/icon-new-01.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>2</itemCd><itemTitle><![CDATA[정보통신/과학]]></itemTitle>        <itemImg><![CDATA[/data/images/icon-new-02.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>3</itemCd><itemTitle><![CDATA[건축/환경/안전]]></itemTitle>       <itemImg><![CDATA[/data/images/icon-new-03.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>4</itemCd><itemTitle><![CDATA[교육/법률/사회복지]]></itemTitle>    <itemImg><![CDATA[/data/images/icon-new-04.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>5</itemCd><itemTitle><![CDATA[의료/보건]]></itemTitle>           <itemImg><![CDATA[/data/images/icon-new-05.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>6</itemCd><itemTitle><![CDATA[문화/예술/미디어]]></itemTitle>     <itemImg><![CDATA[/data/images/icon-new-06.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>7</itemCd><itemTitle><![CDATA[개인서비스]]></itemTitle>           <itemImg><![CDATA[/data/images/icon-new-07.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>8</itemCd><itemTitle><![CDATA[운송/설치/정비]]></itemTitle>       <itemImg><![CDATA[/data/images/icon-new-08.png]]></itemImg></occpItemData>
+						<occpItemData><itemCd>9</itemCd><itemTitle><![CDATA[농림어업]]></itemTitle>             <itemImg><![CDATA[/data/images/icon-new-09.png]]></itemImg></occpItemData>
+					</occpItemDataList>
+				</subItem>
+			</subItemList>
+		</item>
+		<item>
+			<itemIndex>2</itemIndex>
+			<title>검사진단</title>
+			<mainYn>N</mainYn>
+			<gnbYn>Y</gnbYn>
+			<comp>TestDiagnosis</comp>
+			<name>TestDiagnosis</name>
+			<statsCd>003</statsCd>
+			<gnbOnUrl>/data/images/gnb-2.png</gnbOnUrl>
+			<gnbOffUrl>/data/images/gnb-2.png</gnbOffUrl>
+			<subIconList>
+				<subIcon>
+					<subIndex>0</subIndex>
+					<subTitle>직업적성검사</subTitle>
+					<iconUrl>/data/images/test-icon-1.png</iconUrl>
+					<statsCd>015</statsCd>
+					<subComp>TestDiagnosis</subComp>
+					<dataUrl><![CDATA[https://www.career.go.kr/inspct/web/psycho/vocation]]></dataUrl>
+					<qrCd>/data/images/qr_vocational_aptitude.jpg</qrCd>
+					<popUpType>iframe1</popUpType>
+				</subIcon>
+				<subIcon>
+					<subIndex>1</subIndex>
+					<subTitle>직업가치관검사</subTitle>
+					<iconUrl>/data/images/test-icon-5.png</iconUrl>
+					<statsCd>016</statsCd>
+					<subComp>TestDiagnosis</subComp>
+					<dataUrl><![CDATA[https://www.career.go.kr/inspct/web/psycho/value2]]></dataUrl>
+					<qrCd>/data/images/qr_work_values.jpg</qrCd>
+					<popUpType>iframe1</popUpType>
+				</subIcon>
+				<subIcon>
+					<subIndex>2</subIndex>
+					<subTitle>진로성숙도검사</subTitle>
+					<iconUrl>/data/images/test-icon-6.png</iconUrl>
+					<statsCd>017</statsCd>
+					<subComp>TestDiagnosis</subComp>
+					<dataUrl><![CDATA[https://www.career.go.kr/inspct/web/psycho/grow2]]></dataUrl>
+					<qrCd>/data/images/qr_caree_maturity.jpg</qrCd>
+					<popUpType>iframe1</popUpType>
+				</subIcon>
+				<subIcon>
+					<subIndex>3</subIndex>
+					<subTitle>직업흥미검사</subTitle>
+					<iconUrl>/data/images/test-icon-7.png</iconUrl>
+					<statsCd>018</statsCd>
+					<subComp>TestDiagnosis</subComp>
+					<dataUrl><![CDATA[https://www.career.go.kr/inspct/web/psycho/itrstk]]></dataUrl>
+					<qrCd>/data/images/qr_job_interest.jpg</qrCd>
+					<popUpType>iframe1</popUpType>
+				</subIcon>
+				<subIcon>
+					<subIndex>4</subIndex>
+					<subTitle>진로개발역량검사</subTitle>
+					<iconUrl>/data/images/test-icon-9.png</iconUrl>
+					<statsCd>019</statsCd>
+					<subComp>TestDiagnosis</subComp>
+					<dataUrl><![CDATA[https://www.career.go.kr/inspct/web/psycho/able]]></dataUrl>
+					<qrCd>/data/images/qr_career_development.jpg</qrCd>
+					<popUpType>iframe1</popUpType>
+				</subIcon>
+				<subIcon>
+					<subIndex>5</subIndex>
+					<subTitle>스트레스진단</subTitle>
+					<iconUrl>/data/images/test-icon-3.png</iconUrl>
+					<statsCd>020</statsCd>
+					<subComp>TestDiagnosis</subComp>
+					<dataUrl><![CDATA[/data/data_store/config_stress_test.json]]></dataUrl>
+					<qrCd>NO</qrCd>
+					<popUpType>testDiagnosis</popUpType>
+				</subIcon>
+				<subIcon>
+					<subIndex>6</subIndex>
+					<subTitle>정신건강 진단</subTitle>
+					<iconUrl>/data/images/test-icon-4.png</iconUrl>
+					<statsCd>021</statsCd>
+					<subComp>TestDiagnosis</subComp>
+					<dataUrl><![CDATA[/data/data_store/config_mental_health_test.json]]></dataUrl>
+					<qrCd>NO</qrCd>
+					<popUpType>testDiagnosis</popUpType>
+				</subIcon>
+				<subIcon>
+					<subIndex>7</subIndex>
+					<subTitle>인터넷중독 진단</subTitle>
+					<iconUrl>/data/images/test-icon-11.png</iconUrl>
+					<statsCd>022</statsCd>
+					<subComp>TestDiagnosis</subComp>
+					<dataUrl><![CDATA[/data/data_store/config_internet_addition_test.json]]></dataUrl>
+					<qrCd>NO</qrCd>
+					<popUpType>testDiagnosis</popUpType>
+				</subIcon>
+				<subIcon>
+					<subIndex>8</subIndex>
+					<subTitle>ADHD 진단</subTitle>
+					<iconUrl>/data/images/test-icon-12.png</iconUrl>
+					<statsCd>023</statsCd>
+					<subComp>TestDiagnosis</subComp>
+					<dataUrl><![CDATA[/data/data_store/config_adhd_test.json]]></dataUrl>
+					<qrCd>NO</qrCd>
+					<popUpType>testDiagnosis</popUpType>
+				</subIcon>
+			</subIconList>
+		</item>
+		<item>
+			<itemIndex>3</itemIndex>
+			<title>교외활동</title>
+			<mainYn>N</mainYn>
+			<gnbYn>Y</gnbYn>
+			<comp>SuburbsAct</comp>
+			<name>SuburbsAct</name>
+			<statsCd>004</statsCd>
+			<gnbOnUrl>/data/images/gnb-4.png</gnbOnUrl>
+			<gnbOffUrl>/data/images/gnb-4.png</gnbOffUrl>
+			<subItemList>
+				<subItem>
+					<subIndex>0</subIndex>
+					<subTitle>봉사활동</subTitle>
+					<statsCd>024</statsCd>
+					<subComp>ServiceAct</subComp>
+					<dataUrl><![CDATA[/data/data_store/config_volunteer_028015.json]]></dataUrl>
+					<detailGroup>1</detailGroup>
+				</subItem>
+				<subItem>
+					<subIndex>1</subIndex>
+					<subTitle>공연전시</subTitle>
+					<statsCd>025</statsCd>
+					<subComp>PerformDisplay</subComp>
+					<dataUrl><![CDATA[/data/data_store/perform_display_ggms.json]]></dataUrl>
+					<detailGroup>2</detailGroup>
+				</subItem>
+				<subItem>
+					<subIndex>2</subIndex>
+					<subTitle>행사축제</subTitle>
+					<statsCd>026</statsCd>
+					<subComp>EventFestival</subComp>
+					<dataUrl><![CDATA[/data/data_store/event_festival_ggms.json]]></dataUrl>
+					<detailGroup>2</detailGroup>
+				</subItem>
+				<subItem>
+					<subIndex>3</subIndex>
+					<subTitle>공모전</subTitle>
+					<statsCd>027</statsCd>
+					<subComp>Contest</subComp>
+					<dataUrl><![CDATA[/data/data_store/contest_total.xml]]></dataUrl>
+					<detailGroup>3</detailGroup>
+				</subItem>
+				<subItem>
+					<subIndex>4</subIndex>
+					<subTitle>대외활동</subTitle>
+					<statsCd>028</statsCd>
+					<subComp>ExtrnlAct</subComp>
+					<dataUrl><![CDATA[/data/data_store/outside_act_total.xml]]></dataUrl>
+					<detailGroup>3</detailGroup>
+				</subItem>
+				<subItem>
+					<subIndex>5</subIndex>
+					<subTitle>추천도서</subTitle>
+					<statsCd>029</statsCd>
+					<subComp>RecommendBook</subComp>
+					<dataUrl><![CDATA[/data/data_store/month_read_gb_all.json]]></dataUrl>
+					<detailGroup>4</detailGroup>
+				</subItem>
+			</subItemList>
+		</item>
+		<item>
+			<itemIndex>4</itemIndex>
+			<title>학교소식</title>
+			<mainYn>N</mainYn>
+			<gnbYn>Y</gnbYn>
+			<comp>SchoolNews</comp>
+			<name>SchoolNews</name>
+			<statsCd>005</statsCd>
+			<gnbOnUrl>/data/images/gnb-5.png</gnbOnUrl>
+			<gnbOffUrl>/data/images/gnb-5.png</gnbOffUrl>
+			<subIconList>
+				<subIcon>
+					<subIndex>1</subIndex>
+					<subTitle>오늘의 식단</subTitle>
+					<iconUrl>/data/images/notcie-icon-3.png</iconUrl>
+					<statsCd>031</statsCd>
+					<subComp>SchoolMeal</subComp>
+					<dataUrl><![CDATA[/data/data_store/config_school_meal_ggms001.json]]></dataUrl>
+					<noticeType>NO</noticeType>
+					<popUpType>schoolMeal</popUpType>
+				</subIcon>
+			</subIconList>
+		</item>
+	</itemList>
+</config>

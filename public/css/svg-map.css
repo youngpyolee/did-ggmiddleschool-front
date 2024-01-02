@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+object {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+[data-name] {
+	fill: #D1DEFC;
+	/* fill-rule: evenodd; */
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+	
+}
+[data-name] path {
+	fill: #D1DEFC;
+	fill-rule: evenodd;
+}
+
+[data-name].active {
+	fill: #fff;
+	fill-rule: evenodd;
+}
+[data-name].active path {
+	fill: #fff;
+	fill-rule: evenodd;
+}
+g.active [data-name] {
+	fill: #fff;
+	fill-rule: evenodd;}
+[data-name="군위"] { display: none;}
